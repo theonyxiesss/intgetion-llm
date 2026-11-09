@@ -1,0 +1,26 @@
+{
+  "name": "@intgetion/llm",
+  "version": "0.1.0",
+  "description": "LLM layer for INTGETION modules: Anthropic and OpenRouter adapters, provider selection from env, token budget and cost, PII redaction, untrusted-text wrapping, tool-call validation.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./jev": "./src/jev.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
